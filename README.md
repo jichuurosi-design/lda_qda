@@ -45,7 +45,7 @@ https://colab.research.google.com/drive/147SjblRelctI-yTlH-66REFW4O9HWqWq?usp=sh
 2. Una vez abierto, ejecuta todas las celdas con:
    **Runtime → Run all** (o `Ctrl + F9`)
 
-### Opción 2 — Ejecución local con Jupyter o vs
+### Opción 2 — Ejecución local con Jupyter o visual studio
 
 **Paso 1 — Clona el repositorio:**
 

@@ -11,17 +11,6 @@ Este proyecto implementa y compara dos modelos clásicos de clasificación super
 
 Ambos modelos se aplican sobre el Wine Dataset del UCI Machine Learning Repository, que contiene 178 muestras de vinos italianos clasificadas en 3 categorías según 13 características químicas. El objetivo es comparar el rendimiento predictivo, las fronteras de decisión y las métricas de evaluación de ambos modelos.
 
-## Estructura del repositorio
-
-LDA-QDA-Wine-Dataset/
-
-│
-
-├── LDA_QDA_Completo.ipynb     # Notebook principal con todo el análisis
-
-└── README.md                  # Este archivo
-
-
 ## Dataset
 
 El dataset utilizado es el Wine Dataset, disponible directamente desde la librería `scikit-learn`. No es necesario descargar ningún archivo externo.
@@ -45,53 +34,33 @@ wine = load_wine()*
 `total_phenols`, `flavanoids`, `nonflavanoid_phenols`, `proanthocyanins`,
 `color_intensity`, `hue`, `od280/od315_of_diluted_wines`, `proline`
 
----
+## Cómo ejecutar el proyecto
 
-## ▶️ Cómo ejecutar el proyecto
-
-### ✅ Opción 1 — Google Colab (recomendado, sin instalación)
+### Opción 1 — Google Colab (recomendado, sin procedimientos extras)
 
 1. Haz clic en el siguiente badge para abrir el notebook directamente en Colab:
 
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TU_USUARIO/LDA-QDA-Wine-Dataset/blob/main/LDA_QDA_Completo.ipynb)
+https://colab.research.google.com/drive/147SjblRelctI-yTlH-66REFW4O9HWqWq?usp=sharing
 
 2. Una vez abierto, ejecuta todas las celdas con:
    **Runtime → Run all** (o `Ctrl + F9`)
 
-> ⚠️ Reemplaza `TU_USUARIO` en el enlace de arriba con tu nombre de usuario real de GitHub.
-
----
-
-### 💻 Opción 2 — Ejecución local con Jupyter
-
-**Requisitos previos:**
-
-```
-Python >= 3.8
-```
+### Opción 2 — Ejecución local con Jupyter o vs
 
 **Paso 1 — Clona el repositorio:**
 
-```bash
-git clone https://github.com/TU_USUARIO/LDA-QDA-Wine-Dataset.git
-cd LDA-QDA-Wine-Dataset
-```
+*git clone https://github.com/TU_USUARIO/LDA-QDA-Wine-Dataset.git
+cd LDA-QDA-Wine-Dataset*
 
 **Paso 2 — Instala las dependencias:**
 
-```bash
-pip install scikit-learn pandas numpy matplotlib seaborn jupyter
-```
+*pip install scikit-learn pandas numpy matplotlib seaborn jupyter*
 
 **Paso 3 — Ejecuta el notebook:**
 
-```bash
-jupyter notebook LDA_QDA_Completo.ipynb
-```
+*jupyter notebook LDA_QDA_Completo.ipynb*
 
----
-
-## 📊 Contenido del Notebook
+## Contenido del Notebook
 
 El notebook está organizado en las siguientes secciones:
 
@@ -107,9 +76,7 @@ El notebook está organizado en las siguientes secciones:
 | 8 | **Fronteras de decisión** | Visualización gráfica de fronteras LDA (lineal) vs QDA (cuadrática) |
 | 9 | **Conclusiones** | 5 conclusiones fundamentadas |
 
----
-
-## 🔍 Principales hallazgos
+## Principales hallazgos
 
 ### Métricas de rendimiento obtenidas
 
@@ -120,7 +87,7 @@ El notebook está organizado en las siguientes secciones:
 | **Recall (weighted)** | ~0.98 | ~0.98 |
 | **F1-Score (weighted)** | ~0.98 | ~0.98 |
 
-> 📌 Los valores exactos se muestran al ejecutar el notebook.
+> Los valores exactos se muestran al ejecutar el notebook.
 
 ### Conclusiones principales
 
@@ -128,15 +95,13 @@ El notebook está organizado en las siguientes secciones:
 
 2. **QDA** genera fronteras de decisión cuadráticas más flexibles. En este dataset su rendimiento es comparable al de LDA, lo que indica que las diferencias entre las matrices de covarianza de cada clase no son drásticas.
 
-3. Las variables **`alcohol`** y **`flavanoids`** son las más discriminantes visualmente: con solo estas dos variables, ambos modelos logran separar correctamente la mayoría de las muestras.
+3. Las variables `alcohol` y `flavanoids` son las más discriminantes visualmente: con solo estas dos variables, ambos modelos logran separar correctamente la mayoría de las muestras.
 
 4. La **estandarización** fue una decisión clave: las 13 variables tienen escalas muy distintas (p.ej., `magnesium` ~100 vs `alcohol` ~13), y sin normalizarlas los modelos podrían sesgarse hacia las variables de mayor magnitud.
 
-5. **LDA es preferible** cuando la interpretabilidad y la eficiencia son prioritarias. **QDA es más adecuado** cuando las covarianzas entre clases difieren significativamente y se dispone de suficientes observaciones por clase para estimar matrices de covarianza estables.
+5. **LDA es preferible** cuando la interpretabilidad y la eficiencia son prioritarias. QDA es más adecuado cuando las covarianzas entre clases difieren significativamente y se dispone de suficientes observaciones por clase para estimar matrices de covarianza estables.
 
----
-
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 | Librería | Uso |
 |---|---|
@@ -147,15 +112,11 @@ El notebook está organizado en las siguientes secciones:
 | `seaborn` | Gráficos estadísticos (heatmap, boxplot) |
 | `Google Colab` | Entorno de ejecución en la nube |
 
----
+## Autor
 
-## 👤 Autor
-
-**[Tu nombre aquí]**
-📚 Carrera: Ciencia de Datos e Inteligencia Artificial
-📅 Fecha: 2026
-
----
+**Miguel Alejandro Yglesias Alvear**
+Carrera: Ciencia de Datos e Inteligencia Artificial
+📅 Fecha: 5 de julio del 2026
 
 ## 📚 Referencias
 

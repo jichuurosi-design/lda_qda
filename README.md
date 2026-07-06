@@ -14,8 +14,11 @@ Ambos modelos se aplican sobre el Wine Dataset del UCI Machine Learning Reposito
 ## Estructura del repositorio
 
 LDA-QDA-Wine-Dataset/
+
 │
+
 ├── LDA_QDA_Completo.ipynb     # Notebook principal con todo el análisis
+
 └── README.md                  # Este archivo
 
 

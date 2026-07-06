@@ -49,8 +49,7 @@ https://colab.research.google.com/drive/147SjblRelctI-yTlH-66REFW4O9HWqWq?usp=sh
 
 **Paso 1 — Clona el repositorio:**
 
-*git clone https://github.com/TU_USUARIO/LDA-QDA-Wine-Dataset.git
-cd LDA-QDA-Wine-Dataset*
+*se puede clonar el repositorio de github o descargar el archivo ipynb en el google colab*
 
 **Paso 2 — Instala las dependencias:**
 

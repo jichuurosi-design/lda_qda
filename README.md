@@ -115,12 +115,7 @@ El notebook está organizado en las siguientes secciones:
 ## Autor
 
 **Miguel Alejandro Yglesias Alvear**
+
 Carrera: Ciencia de Datos e Inteligencia Artificial
+
 📅 Fecha: 5 de julio del 2026
-
-## 📚 Referencias
-
-- Fisher, R.A. (1936). *The use of multiple measurements in taxonomic problems*. Annals of Eugenics, 7(2), 179-188.
-- Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning* (2nd ed.). Springer.
-- UCI Machine Learning Repository. *Wine Dataset*. https://archive.ics.uci.edu/ml/datasets/wine
-- Pedregosa, F. et al. (2011). *Scikit-learn: Machine learning in Python*. JMLR, 12, 2825-2830.
